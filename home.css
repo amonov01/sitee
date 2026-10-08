@@ -1,0 +1,83 @@
+/* Faqat Home sahifasi (Figma'ga moslangan) */
+body.home{font-family:'Montserrat',sans-serif;color:#2b2b2b}
+.home h1,.home h2,.home h3{font-family:'Bree Serif',serif;font-weight:400}
+.home h2{font-size:2rem;color:#2b2b2b}
+.home h2 em{color:var(--orange);font-style:normal}
+.home .sub{max-width:46ch;color:#5d6b82;font-size:.95rem;opacity:1;margin-bottom:40px}
+.home .sub.wide{max-width:62ch}
+.home .nav nav{gap:34px;font:600 .85rem 'Poppins',sans-serif}
+.home .btn,.btn-o{font-family:'Poppins',sans-serif;font-size:.85rem}
+.home .btn{background:#ff8f4d;color:#1f1812}
+.home .nav .btn{margin-left:20px}
+
+.home .hero{position:relative;min-height:76vh;padding-bottom:100px;margin-bottom:0}
+.home .hero h1{max-width:none;font-size:clamp(1.8rem,3.4vw,2.6rem)}
+.finder{position:absolute;left:50%;bottom:-30px;transform:translateX(-50%);z-index:3;display:flex;gap:10px;align-items:center;background:#fff;padding:12px 14px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.15);width:max-content;max-width:94vw}
+.finder select{padding:9px 14px;border:1px solid #c9c9c9;border-radius:999px;font:400 .75rem 'Poppins',sans-serif;background:#fff;color:#444}
+.finder select:first-child{border-color:#ff8f4d}
+
+.section.first{padding-top:100px}
+.vac{display:grid;grid-template-columns:repeat(3,minmax(0,200px));gap:18px;justify-content:center}
+.vc{border:1px solid #e8e8e8;border-radius:14px;padding:20px 12px 16px;background:#fff}
+.vi{height:84px;display:flex;align-items:center;justify-content:center}
+.vi img{max-height:84px;max-width:100%}
+.vi span{font-size:2.6rem}
+.vc h3{color:#ff8f4d;font-size:.9rem;margin:14px 0 8px}
+.vc ul{list-style:none;font:400 .65rem 'Poppins',sans-serif;color:#666;line-height:1.9}
+.vc li::before{content:"✓ ";color:#ff8f4d}
+
+.pcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:900px;margin:0 auto 36px}
+.pc{background:#fff;border-radius:18px;box-shadow:0 2px 14px rgba(0,0,0,.1);overflow:hidden;text-align:left}
+.pi{height:170px;background-size:cover;background-position:center;position:relative}
+.badge{position:absolute;top:10px;right:10px;background:#ff8f4d;color:#fff;font:600 .6rem 'Poppins',sans-serif;padding:4px 10px;border-radius:999px}
+.pb{padding:14px 16px 18px}
+.loc{color:#ff8f4d;font:600 .65rem 'Poppins',sans-serif}
+.pb h3{font:700 .85rem 'Poppins',sans-serif;margin-top:6px}
+
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;max-width:960px;margin:0 auto}
+.why img{width:130px;height:130px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 22px}
+.why h3{font:700 .95rem 'Poppins',sans-serif;margin-bottom:10px}
+.why p{font-size:.78rem;color:#5d6b82}
+
+.map{display:block;width:min(620px,92%);margin:0 auto 56px}
+.dtitle{font:400 1.1rem 'Poppins',sans-serif!important;margin-bottom:6px}
+.dtitle span{color:#ff8f4d}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:3px;max-width:760px;margin:0 auto 34px}
+.dgrid figure{aspect-ratio:553/382;background-size:cover;background-position:center;position:relative}
+.dgrid figcaption{position:absolute;left:14px;bottom:12px;color:#fff;font:400 .6rem 'Poppins',sans-serif;text-align:left;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.dgrid figcaption b{font:400 .85rem 'Bree Serif',serif}
+.btn-o{display:inline-block;border:1.5px solid #222;background:#fff;color:#222;padding:8px 26px;border-radius:999px;font-weight:600}
+
+.rev{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:960px;margin:50px auto 0}
+.rc{position:relative;border:1px solid #333;border-radius:14px;padding:44px 20px 24px}
+.rc img{position:absolute;top:-32px;left:50%;transform:translateX(-50%);width:64px;height:64px;border-radius:50%;object-fit:cover}
+.rc h3{font:700 .85rem 'Poppins',sans-serif}
+.vis{font:400 .8rem 'Poppins',sans-serif}
+.rc hr{border:0;border-top:1px solid #f3c9a5;margin:14px 0}
+.rc p:last-child{font:400 .8rem 'Poppins',sans-serif;line-height:1.9}
+
+.news{background:linear-gradient(rgba(10,25,30,.25),rgba(10,25,30,.35)),url(images/footer.png) center/cover;padding:90px 12vw 70px}
+.news form{max-width:560px;text-align:left}
+.news h2{color:#fff;margin-bottom:24px}
+.news input{display:block;width:100%;padding:11px 14px;border:0;margin-bottom:14px;font:400 .75rem 'Poppins',sans-serif}
+.news .msg{color:#fff}
+.foot{background:#1e1710;color:#fff;padding:56px 12vw 0}
+.fc{display:grid;grid-template-columns:1.2fr 1fr 1.2fr;gap:0;text-align:left}
+.fc>div{padding:0 28px;border-left:1px solid #ff8f4d}
+.fc>div:first-child{border-left:0;padding-left:0}
+.fc img{height:34px;margin-bottom:10px}
+.fc h3{font-size:.95rem;margin:0 0 16px}
+.fc a{display:block;font:400 .78rem 'Poppins',sans-serif;margin-bottom:14px;opacity:.9}
+.agency{font:400 1rem 'Poppins',sans-serif;margin-bottom:14px}
+.small{font:400 .75rem 'Poppins',sans-serif;opacity:.85;line-height:1.7;margin-bottom:16px}
+.copy{margin-top:48px;padding:16px 0;border-top:1px solid #3a2f25;font:400 .7rem 'Poppins',sans-serif;text-align:left}
+
+@media(max-width:820px){
+  .finder{flex-wrap:wrap;border-radius:24px;justify-content:center}
+  .vac{grid-template-columns:repeat(2,minmax(0,200px))}
+  .pcards,.why,.rev{grid-template-columns:1fr}
+  .rev{gap:48px}
+  .fc{grid-template-columns:1fr;gap:28px}
+  .fc>div{border-left:0;padding:0}
+  .home .nav .btn{margin-left:0}
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surf & Travel | Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="anim.css">
+</head>
+<body class="home">
+
+<header class="nav">
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="Surf &amp; Travel"></a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <nav id="menu">
+    <a href="#vacanze">Tipi di Vacanze</a>
+    <a href="#destinazioni">Destinazioni</a>
+    <a href="search.html">Sistemazioni</a>
+    <a href="#newsletter">About</a>
+    <a href="search.html" class="btn btn-sm">Prenota</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>La tua prossima avventura inizia oggi.</h1>
+  <form class="finder" action="search.html">
+    <select aria-label="Campo attivo"><option>Campo Attivo</option><option>Surf</option><option>Yoga</option><option>Van life</option></select>
+    <select aria-label="Scelto"><option>Scelto</option><option>Europa</option><option>Africa</option><option>Asia</option></select>
+    <select aria-label="Default"><option>Default</option><option>3 giorni</option><option>7 giorni</option><option>10 giorni</option></select>
+    <button class="btn btn-sm" type="submit">Cerca</button>
+  </form>
+</section>
+
+<section class="section first" id="vacanze">
+  <h2>Le vacanze <em>SurfCamp</em></h2>
+  <p class="sub">Scegli la tipologia di vacanza di surf che fa per te.<br>Puoi partire in qualsiasi momento.</p>
+  <div class="vac" id="vac"></div>
+</section>
+
+<section class="section">
+  <h2>I pacchetti più popolari</h2>
+  <p class="sub">Scegli la tipologia di vacanza di surf che fa per te. Puoi partire in qualsiasi momento.</p>
+  <div class="pcards" id="packs"></div>
+  <a href="search.html" class="btn">Scopri tutti i pacchetti</a>
+</section>
+
+<section class="section">
+  <h2>Perché partire con <em>Surfcamp</em>?</h2>
+  <p class="sub wide">Da oltre 20 anni aiutiamo viaggiatrici e viaggiatori come te a vivere profonde esperienze di surf e di vita in giro per il mondo. Possiamo garantirti:</p>
+  <div class="why">
+    <div><img src="images/vivi3.png" alt=""><h3>Attività esclusive</h3><p>Non solo surf. Con noi potrai scegliere se fare yoga, immersioni, escursioni e tanto altro. Personalizziamo il tuo viaggio con ciò che ami di più.</p></div>
+    <div><img src="images/vivi2.png" alt=""><h3>Le mete di Surfcamp</h3><p>Onde per diversi livelli, sicurezza, affidabilità e rispetto per la cultura locale. Ecco cosa puoi aspettarti dalle mete e dalle esperienze di Surf Camp.</p></div>
+    <div><img src="images/vivi1.png" alt=""><h3>Adatto a tutti quanti</h3><p>Istruttori e surfisti locali ti porteranno tra le onde migliori per te. Sia che tu non abbia mai preso una tavola in mano, sia che tu sia già a un livello avanzato.</p></div>
+  </div>
+</section>
+
+<section class="section" id="destinazioni">
+  <h2>Scegli la tua prossima destinazione</h2>
+  <p class="sub">In quale angolo di mondo vuoi andare? Cerca tra oltre 200 mete disponibili.</p>
+  <img class="map" src="images/map.png" alt="Mappa del mondo">
+  <h3 class="dtitle"><span>◎</span> Destinazioni</h3>
+  <p class="sub">Tutte le destinazioni selezionate per la tua prossima vacanza Surf e non solo.</p>
+  <div class="dgrid" id="dgrid"></div>
+  <a href="search.html" class="btn-o">Cerca per località</a>
+</section>
+
+<section class="section">
+  <h2>Le opinioni di chi ha viaggiato con noi</h2>
+  <p class="sub">Abbiamo aiutato più di 3000 persone come te a vivere una vacanza di surf indimenticabile.</p>
+  <div class="rev" id="rev"></div>
+</section>
+
+<section class="news" id="newsletter">
+  <form id="nlForm">
+    <h2>Iscriviti alla <em>Newsletter</em></h2>
+    <input type="text" placeholder="Nome e Cognome" required>
+    <input type="email" id="email" placeholder="Indirizzo e-mail" required>
+    <button class="btn btn-sm" type="submit">Voglio iscrivermi!</button>
+    <p id="nlMsg" class="msg"></p>
+  </form>
+</section>
+
+<footer class="foot">
+  <div class="fc">
+    <div><img src="images/logo.png" alt="Surf &amp; Travel"><p class="agency">Surf &amp; Travel Agency</p><p class="small">Tutte le destinazioni selezionate per la tua prossima vacanza Surf e non solo.</p></div>
+    <div><h3>Menu</h3><a href="#vacanze">Vacanze Surf</a><a href="#destinazioni">Destinazioni</a><a href="search.html">Sistemazioni</a><a href="#newsletter">About</a></div>
+    <div><h3>Contattaci</h3><p class="small">✉ info@surfandtravel.it<br>☎ +39 000 000 000</p><h3>Seguici sui social</h3><p class="small">Facebook · Instagram · YouTube</p></div>
+  </div>
+  <p class="copy">© Surf &amp; Travel Agency</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="anim.js"></script>
+</body>
+</html>

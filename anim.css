@@ -1,0 +1,33 @@
+/* Animatsiyalar (hamma sahifalar uchun) */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:none}}
+
+.nav{animation:fadeDown .7s ease both}
+.hero h1{animation:fadeUp .9s .15s ease both}
+.hero .btn,.finder{animation:fadeUp .9s .4s ease both}
+.finder{animation-name:fadeUpCenter}
+@keyframes fadeUpCenter{from{opacity:0;transform:translate(-50%,28px)}to{opacity:1;transform:translate(-50%,0)}}
+
+/* Scroll bilan paydo bo'lish */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Hover effektlari */
+.vc,.pc,.card,.rc,.why img,.circle{transition:transform .3s ease,box-shadow .3s ease}
+.vc:hover,.pc:hover,.card:hover,.rc:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(0,0,0,.14)}
+.why>div:hover img{transform:scale(1.06)}
+.pi,.card .img,.dgrid figure{transition:transform .5s ease}
+.pc,.card{overflow:hidden}
+.dgrid{overflow:hidden}
+.dgrid figure{overflow:hidden}
+.pc:hover .pi,.card:hover .img{transform:scale(1.07)}
+.dgrid figure:hover{transform:scale(1.03);z-index:2}
+.nav nav a:not(.btn){transition:color .2s}
+.nav nav a:not(.btn):hover{color:#ff8f4d}
+.map{transition:transform .6s ease}
+.map:hover{transform:scale(1.03)}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}

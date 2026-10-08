@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surf & Travel | Destinazione</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="anim.css">
+</head>
+<body data-page="dest">
+
+<header class="nav">
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="Surf &amp; Travel"></a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <nav id="menu">
+    <a href="index.html">Home</a>
+    <a href="search.html">Cerca</a>
+    <a href="destinazione.html" class="active">Destinazioni</a>
+    <a href="#newsletter" class="btn btn-sm">Contatti</a>
+  </nav>
+</header>
+
+<section class="hero small dest-hero">
+  <h1>Scopri le nostre destinazioni in Africa</h1>
+</section>
+
+<section class="section">
+  <h2>Scegli le tue onde disponibili in Africa</h2>
+  <p class="sub">Dal Marocco al Sudafrica: spot per ogni livello.</p>
+  <div class="cards" id="results"></div>
+</section>
+
+<section class="section sand">
+  <h2>Perché partire con noi</h2>
+  <div class="circles">
+    <div><span class="circle c1"></span><h3>Spot sicuri</h3><p>Selezionati insieme a istruttori locali.</p></div>
+    <div><span class="circle c2"></span><h3>Alloggi inclusi</h3><p>Camp e ostelli a due passi dal mare.</p></div>
+    <div><span class="circle c3"></span><h3>Cancellazione flessibile</h3><p>Cambia data senza stress.</p></div>
+  </div>
+</section>
+
+<footer class="footer" id="newsletter">
+  <h2>Iscriviti alla Newsletter</h2>
+  <form id="nlForm">
+    <input type="email" id="email" placeholder="La tua email" required>
+    <button class="btn" type="submit">Iscriviti</button>
+  </form>
+  <p id="nlMsg" class="msg"></p>
+  <div class="fcols">
+    <div><strong>Surf &amp; Travel</strong><p>Camp, onde e viaggi.</p></div>
+    <div><strong>Menu</strong><a href="index.html">Home</a><a href="search.html">Cerca</a><a href="destinazione.html">Destinazioni</a></div>
+    <div><strong>Seguici</strong><a href="#">Instagram</a><a href="#">Facebook</a></div>
+  </div>
+</footer>
+
+<script src="pages.js"></script>
+<script src="anim.js"></script>
+</body>
+</html>
